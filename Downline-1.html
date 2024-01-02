@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .dashboard-banner {
+            background-color: #eee;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dashboard-body {
+            margin-top: 20px;
+        }
+
+        .custom--card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .form--control {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .copytext {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .share-btn {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .table-contextual {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .table-contextual th, .table-contextual td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table-contextual th {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Downline</h1>
+    </header>
+
+    <div class="container">
+        <div class="dashboard-banner">
+            <h3 class="breadcumb__title"> Referrals</h3>
+            <div class="d-flex justify-content-end">
+                <!-- Add your buttons or content here -->
+                <button class="share-btn" onclick="shareLink()">Share Link</button>
+            </div>
+        </div>
+
+        <div class="dashboard-body">
+            <div class="row justify-content-center">
+                <div class="card custom--card">
+                    <div class="card-body">
+                        <h4 class="mb-2 text-uppercase">Share Referral Link </h4>
+                        <div class="mb-3">
+                            <label>Referral Link</label>
+                            <div class="input-group">
+                                <input type="text" name="text" class="form--control referralURL" value="https://capitalglobeinvestmentcompany" readonly>
+                                <button class="input-group-text bg--base copytext" id="copyBoard" onclick="copyToClipboard()">
+                                    <i class="fa fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Add your referral history data here -->
+                        <div class="col-lg-12 stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">REFERRAL HISTORY</h4>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-contextual">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Phone</th>
+                                                    <th>Username</th>
+                                                    <th>Bonus</th>
+                                                    <th>Status</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Add your referral history rows here -->
+                                                <tr>
+                                                    <td>""</td>
+                                                    <td>""</td>
+                                                    <td>""</td>
+                                                    <td>KES50</td>
+                                                    <td>Active</td>
+                                                    <td>""</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            let referralURL = document.querySelector('.referralURL');
+            referralURL.select();
+            document.execCommand('copy');
+            alert('Copied to clipboard: ' + referralURL.value);
+        }
+
+        function shareLink() {
+            // Implement your share functionality here
+            alert('Implement your share functionality here');
+        }
+    </script>
+</body>
+</html>

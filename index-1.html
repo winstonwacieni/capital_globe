@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capital Globe Investment Company</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #400d44;
+      padding: 10px;
+      color: white;
+    }
+
+    nav {
+      background-color: #2c3e50;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 5px;
+    }
+
+    nav a:hover {
+      background-color: #1dafb4;
+      color: white;
+    }
+
+    .container {
+      background-color: white;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    .balance {
+      background-color: #27ae60;
+      color: white;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    .income {
+      background-color: #f39c12;
+      color: white;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    .withdrawal {
+      background-color: #241142;
+      color: white;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Capital Globe Investment Company</h1>
+  </header>
+
+  <nav>
+    <a href="#" id="homeBtn">Home</a>
+    <a href="#" id="cartBtn">Cart</a>
+    <a href="#" id="notificationBtn">Notification</a>
+    <a href="#" id="menuBtn">Menu</a>
+  </nav>
+
+  <div class="container" id="homeContainer">
+    <div class="balance">
+      <p>Account Balance: ksh 50</p>
+    </div>
+    <div class="income">
+      <p>Daily Income: ksh 0.00</p>
+    </div>
+    <div class="withdrawal">
+      <p>Total Withdrawal: ksh 0.00</p>
+    </div>
+  </div>
+
+  <div class="container" id="cartContainer">
+    <!-- Content for Cart Container -->
+  </div>
+
+  <div class="container" id="notificationContainer">
+    <!-- Content for Notification Container -->
+  </div>
+
+  <div class="container" id="menuContainer">
+    <!-- Content for Menu Container -->
+  </div>
+
+
+  <script>
+    // JavaScript for handling button clicks and functionality
+    const homeBtn = document.getElementById('homeBtn');
+    const cartBtn = document.getElementById('cartBtn');
+    const notificationBtn = document.getElementById('notificationBtn');
+    const menuBtn = document.getElementById('menuBtn');
+
+    const homeContainer = document.getElementById('homeContainer');
+    const cartContainer = document.getElementById('cartContainer');
+    const notificationContainer = document.getElementById('notificationContainer');
+    const menuContainer = document.getElementById('menuContainer');
+
+    homeBtn.addEventListener('click', () => {
+      homeContainer.style.display = 'block';
+      cartContainer.style.display = 'none';
+      notificationContainer.style.display = 'none';
+      menuContainer.style.display = 'none';
+    });
+
+    cartBtn.addEventListener('click', () => {
+      // Handle Cart Button Click
+    });
+
+    notificationBtn.addEventListener('click', () => {
+      // Handle Notification Button Click
+    });
+
+    menuBtn.addEventListener('click', () => {
+      // Handle Menu Button Click
+    });
+  </script>
+  <footer>Capital Globe Investment Company</footer>br>@2023. All Rights Reserved</footer>
+</body>
+</html>
