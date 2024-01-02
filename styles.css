@@ -1,0 +1,165 @@
+/* *
+Deposit.Html
+/
+/* Reset some default styles */
+body, h1, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.content-body {
+    margin-top: 20px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.main-container {
+    margin: 20px;
+}
+
+/* Form styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-info {
+    background-color: #b8ad52;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #3f5e80;
+}
+
+.btn-1g {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-1g:hover {
+    background-color: #188f14;
+}
+
+/* */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  header {
+    background-color: #400d44;
+    padding: 10px;
+    color: white;
+  }
+
+  nav {
+    background-color: #2c3e50;
+    padding: 10px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+  }
+
+  nav a:hover {
+    background-color: #1dafb4;
+    color: white;
+  }
+
+  .container {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .balance {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+
+  .income {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+
+  .withdrawal {
+    background-color: #241142;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
